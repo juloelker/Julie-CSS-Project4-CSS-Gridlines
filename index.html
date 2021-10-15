@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Relative Gridlines Positioning, Nested</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="top-header">
+        <h1>CSS Relative Gridline Positioning, Nested</h1>
+      </header>
+      <div>
+        <p>
+          The following rows are a grid nested inside a parent grid. The parent
+          includes the blue header and footer. The center section contains an
+          8-column nested grid that uses relative line numbers to position each
+          row.
+        </p>
+        <p>
+          I got this idea from Mozilla's CSS Layout Cookbook. I combined their
+          CSS grid "sticky footer" recipe with the "grid wrapper" recipe,
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Grid_wrapper"
+            target="_blank"
+            >here</a
+          >.
+        </p>
+      </div>
+      <main class="main-area">
+        <article class="middle">
+          <p>Example 1: middle middle middle middle middle middle</p>
+        </article>
+
+        <article class="full-width">
+          <p>
+            Example 2: full-width full-width full-width full-width full-width
+            full-width
+          </p>
+        </article>
+
+        <article class="left-middle">
+          <p>
+            Example 3: left edge to middle, left edge to middle, left edge to
+            middle, left edge to middle, left edge to middle
+          </p>
+        </article>
+        <article class="right-middle">
+          <p>
+            Example 4: right edge to middle, right edge to middle, right edge to
+            middle, right edge to middle, right edge to middle
+          </p>
+        </article>
+        <article class="self">
+          <p>
+            Example 5: narrow center, narrow center, narrow center, narrow
+            center, narrow center, narrow center, narrow center, narrow center,
+            narrow center
+          </p>
+        </article>
+      </main>
+      <footer class="item-footer">
+        <p>Copyright &copy;2021, Julie Oelker</p>
+      </footer>
+    </div>
+  </body>
+</html>
